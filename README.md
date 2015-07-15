@@ -21,3 +21,6 @@ Lnes 656 - 663: Uncomment all but one Tap_ID. This is the unique Tap_ID for this
 In the HTML
 
 Lines 94 - 102: Add in your unique Imp names and URLS.
+
+NOTE: This webpage relies on Bootstrap available from http://getbootstrap.com/2.3.2/
+
