@@ -160,7 +160,7 @@ class printer {
         //Welcome Message
         uart.write("\n");
         uart.write("\n");
-        uart.write(" Hello Mexico City! I'm online  and ready to go!");
+        uart.write(" Hello World, I'm online and ready to go!");
         uart.write("\n");
         uart.write("\n");
         uart.write(LF);
@@ -653,8 +653,8 @@ agent.on("deleteLine", function(value) {
         imp.sleep(0.3);
         // JR code
         agent.send("tap", 1);
-        //tapID = 1; 
-        tapID = 2; 
+        tapID = 1;      
+        //tapID = 2; 
         //tapID = 3; 
         //tapID = 4; 
         //tapID = 5; 
@@ -689,197 +689,4 @@ myPrinter <- printer(hardware.uart57, 19200);
 button.configure(DIGITAL_IN_PULLUP, buttonPress)
 
 
-/*
-THESE ARE THE EXAMPLE TAP LOGOS FROM THE DUNDEE NETWORK
 
-
-uart.write("XXX O V E L Y               ");
-uart.write("\n");
-uart.write("XXX                         ");
-uart.write("\n");
-uart.write("XXX                         ");
-uart.write("\n");
-uart.write("XXX                         ");
-uart.write("\n");
-uart.write("XXX      XXXXXXXXXXXXXXX    ");
-uart.write("\n");
-uart.write("XXX      XXXXXXXXXXXXXXX    ");
-uart.write("\n");
-uart.write("XXX            XXX          ");
-uart.write("\n");
-uart.write("XXX            XXX          ");
-uart.write("\n");
-uart.write("XXXXXXXXXXX    XXX          ");
-uart.write("\n");
-uart.write("XXXXXXXXXXX    XXX          ");
-uart.write("\n");
-uart.write("               XXX          ");
-uart.write("\n");
-uart.write("               XXX          ");
-uart.write("\n");
-uart.write("               XXX          ");
-uart.write("\n");
-uart.write("               XXX H I N G S");
-uart.write("\n");
-
-
-
-uart.write("XX                     XX");
-uart.write("\n");
-uart.write("XX                     XX");
-uart.write("\n");
-uart.write("XX                     XX");
-uart.write("\n");
-uart.write("XX                     XX");
-uart.write("\n");
-uart.write("XX                     XX");
-uart.write("\n");
-uart.write("XX  E A R T S P A C E  XX");
-uart.write("\n");
-uart.write("XX W H O L E F O O D S XX");
-uart.write("\n");
-uart.write("XX                     XX");
-uart.write("\n");
-uart.write("XX                     XX");
-uart.write("\n");
-uart.write("XX                     XX");
-uart.write("\n");
-uart.write("XX                     XX");
-uart.write("\n");
-uart.write("XX                     XX");
-uart.write("\n");
-uart.write("XX                     XX");
-
-
- uart.write("XX                   XX");
- uart.write("\n");
-uart.write("XX                   XX");
-uart.write("\n");
-uart.write("XX                   XX");
-uart.write("\n");
-uart.write("XX                   XX");
-uart.write("\n");
-uart.write("XX                   XX");
-uart.write("\n");
-uart.write("XX E A R T S P A C E XX");
-uart.write("\n");
-uart.write("XXXXXXX Y O G A XXXXXXX");
-uart.write("\n");
-uart.write("XX                   XX");
-uart.write("\n");
-uart.write("XX                   XX");
-uart.write("\n");
-uart.write("XX                   XX");
-uart.write("\n");
-uart.write("XX                   XX");
-uart.write("\n");
-uart.write("XX                   XX");
-uart.write("\n");
-uart.write("XX                   XX");
-
-
-uart.write("               XXXXXXXXXX     ");
-uart.write("\n");
-uart.write("               XXX     XXXX   ");
-uart.write("\n");
-uart.write("               XXX      XXXX  ");
-uart.write("\n");
-uart.write("               XXX      XXXX  ");
-uart.write("\n");
-uart.write("  XXXXXXXXX    XXX     XXXX   ");
-uart.write("\n");
-uart.write("XXXX     XXXX  XXXXXXXXXX     ");
-uart.write("\n");
-uart.write("XXX            XXX            ");
-uart.write("\n");
-uart.write("XXXXX          XXX            ");
-uart.write("\n");
-uart.write("  XXXXXXX      XXX            ");
-uart.write("\n");
-uart.write("       XXXXX   XXX I S T O L S");
-uart.write("\n");
-uart.write("         XXXX                 ");
-uart.write("\n");
-uart.write("          XXXX                ");
-uart.write("\n");
-uart.write("XXX      XXXX                 ");
-uart.write("\n");
-uart.write(" XXXXXXXXXX   P E X           ");
-uart.write("\n");
-
-
-uart.write("XXXXXXXXXXXXXXXX    ");
-uart.write("\n");
-uart.write("XXXX          XXXX  ");
-uart.write("\n");
-uart.write("XXXX           XXXX ");
-uart.write("\n");
-uart.write("XXXX           XXXX ");
-uart.write("\n");
-uart.write("XXXX           XXXX ");
-uart.write("\n");
-uart.write("XXXX          XXXX  ");
-uart.write("\n");
-uart.write("XXXXXXXXXXXXXXXX    ");
-uart.write("\n");
-uart.write("XXXX                ");
-uart.write("\n");
-uart.write("XXXX                ");
-uart.write("\n");
-uart.write("XXXX                ");
-uart.write("\n");
-uart.write("XXXX                ");
-uart.write("\n");
-uart.write("XXXX A R L O U R    ");
-uart.write("\n");
-
-uart.write("XXXXXXXXXXXXXXXXXX");
-uart.write("\n");
-uart.write("XXXX              ");
-uart.write("\n");
-uart.write("XXXX              ");
-uart.write("\n");
-uart.write("XXXX              ");
-uart.write("\n");
-uart.write("XXXX              ");
-uart.write("\n");
-uart.write("XXXXXXXXXXXXXX    ");
-uart.write("\n");
-uart.write("XXXX              ");
-uart.write("\n");
-uart.write("XXXX              ");
-uart.write("\n");
-uart.write("XXXX              ");
-uart.write("\n");
-uart.write("XXXX              ");
-uart.write("\n");
-uart.write("XXXX              ");
-uart.write("\n");
-uart.write("XXXX O L K        ");
-uart.write("\n");
-
-
-uart.write("   XXXX             XXXXXXXXX ");
-uart.write("\n");
-uart.write(" XXXXXXXX           XXXXXXXXX ");
-uart.write("\n");
-uart.write("XXX   XXX           XX        ");
-uart.write("\n");
-uart.write("XX           +      XX        ");
-uart.write("\n");
-uart.write("XX           +      XXXXXXX   ");
-uart.write("\n");
-uart.write("XX         +++++    XXXXXXX   ");
-uart.write("\n");
-uart.write("XX           +      XX        ");
-uart.write("\n");
-uart.write("XX           +      XX        ");
-uart.write("\n");
-uart.write("XXX   XXX           XX        ");
-uart.write("\n");
-uart.write(" XXXXXXXX           XX        ");
-uart.write("\n");
-uart.write("   XXX   A B A R    XX I O D H");
-uart.write("\n");
-
-*/
