@@ -1,6 +1,7 @@
 # TapWriter
 Electric Imp Code to create an 8 bit Tapwriter network
 
+
 In the Agent code:
 
 Lines 31 - 39: Give your Imps names and add in their unique agent URLs
@@ -16,4 +17,7 @@ In the Device code:
 Line 163: Welcome message to show Imp and printer are online
 Lnes 656 - 663: Uncomment all but one Tap_ID. This is the unique Tap_ID for this Imp.
 
+
 In the HTML
+
+Lines 94 - 102: Add in your unique Imp names and URLS.
