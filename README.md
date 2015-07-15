@@ -1,6 +1,11 @@
 # TapWriter
 Electric Imp Code to create an 8 bit Tapwriter network
 
+This project builds upon the work by TomBrew on Instructables
+http://www.instructables.com/id/imPrinter-the-electric-imp-wireless-internet-conne/
+
+WARNING: There is a lot of mess in this code but it works fine, please excuse my hacking/debugging chaos.
+
 
 In the Agent code:
 
